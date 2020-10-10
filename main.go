@@ -75,6 +75,10 @@ func run(url string, count int64, full bool) {
 	mean := float64(timesum) / float64(count)
 	percentage := float64(len(success)) / float64(count)
 	median := total[(count+1)/2].response.Time
+	fmt.Println("+++++++++++++++++++++++++")
+	fmt.Printf("URL: %s\n", url)
+	fmt.Printf("Profile: %d\n", count)
+	fmt.Println("+++++++++++++++++++++++++")
 	fmt.Printf("Mean of all response time: %f ms\n", mean)
 	fmt.Printf("Median of all response time: %d ms\n", median)
 	fmt.Printf("Percentage of successfull response: %d%%\n", int(percentage*100))
@@ -89,13 +93,14 @@ func run(url string, count int64, full bool) {
 		}
 		fmt.Print("\n")
 	}
+	fmt.Println("+++++++++++++++++++++++++")
 }
 
 func main() {
 	var url string
 	var full bool
 	var profile int64
-	pflag.StringVar(&url, "url", "https://red-tree-f56a.someshkoli.workers.dev/links", "URL to make HTTP request to.")
+	pflag.StringVar(&url, "url", "", "URL to make HTTP request to.")
 	pflag.Int64Var(&profile, "profile", 1, "Number of requests to make.")
 	pflag.BoolVar(&full, "full", false, "If mentioned prints full response.")
 	pflag.Parse()
