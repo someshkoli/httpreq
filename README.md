@@ -67,12 +67,15 @@ Table of Content
 ## Comparision
 ### With popular domain
 - Google
+
 ![Google](https://cdn.discordapp.com/attachments/708998065305944075/764294630921207818/httpreqgoogle.png)
 
 - Cloudflare worker
+
 ![Cloudflare worker](https://cdn.discordapp.com/attachments/708998065305944075/764294615406739496/httpreqcloudflare.png)
 
 - Facebook
+
 ![Facebook](https://cdn.discordapp.com/attachments/708998065305944075/764295589449957386/httpreqfacebook.png)
 
 ### Criteria
