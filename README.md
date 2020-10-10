@@ -33,7 +33,7 @@ Table of Content
   Request with biggest size: 220 
   Request with smallest size: 220 
   ```
-### **--full**: Specifies wether to print full response or only body
+### **--full**: Specifies whether to print full response or only body
   - httpreq --url https://red-tree-f56a.someshkoli.workers.dev/links --full
   ```txt
   HTTP/1.1 200 OK
